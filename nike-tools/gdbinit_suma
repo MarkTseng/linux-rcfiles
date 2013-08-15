@@ -1,0 +1,11 @@
+file DvdPlayer
+target remote 172.21.98.144:2000
+set solib-search-path .:/usr/local/msdk-4.3.6-mips-EL-2.6.34-0.9.30.3_hwfpu/lib:/home/RTDOMAIN/bonds.lu/nfs/work/suma/system/lib:/home/RTDOMAIN/bonds.lu/nfs/work/suma/system/lib_release:/home/RTDOMAIN/bonds.lu/nfs/work/suma/system/lib_release/gles_lib
+handle SIG32 noprint nostop pass
+handle SIG33 noprint nostop pass
+handle SIG46 noprint nostop pass
+handle SIG47 noprint nostop pass
+handle SIG48 noprint nostop pass
+handle SIG49 noprint nostop pass
+handle SIGUSR1 noprint nostop pass
+

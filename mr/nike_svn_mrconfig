@@ -1,0 +1,32 @@
+# nike .mrconfig
+#
+#
+
+[nike_svn]
+checkout = svn checkout -N http://cadinfo.realtek.com/svn/col/DVR/branches/software nike_svn
+
+[nike_svn/common_nike]
+checkout = svn checkout http://cadinfo.realtek.com/svn/col/DVR/nike/software/common common_nike
+
+[nike_svn/develop]
+checkout = svn checkout http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/flash_environment/develop
+
+[nike_svn/system]
+checkout = svn update -N system 
+
+[nike_svn/system]
+update = svn update src include lib lib_release
+
+[nike_svn/system/project]
+checkout = svn update -N project
+
+[nike_svn/system/project]
+update = svn update WatchDogApp Realtek TvServer_Nike_ABS_S TvClient_Nike_ABS_S
+
+[kernel/linux-2.6.34]
+checkout = svn checkout http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/linux-2.6.34
+update = svn up
+
+[kernel/system]
+checkout = svn checkout http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/system
+update = svn up
