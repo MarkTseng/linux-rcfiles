@@ -15,11 +15,11 @@ sudo chmod 644 /etc/exports
 rm -rf $HOME/.bashrc
 
 # link rcfile
-ln -s /home/mark/debian_rcfiles/rcfile/bashrc $HOME/.bashrc
-ln -s /home/mark/debian_rcfiles/rcfile/gdbinit $HOME/.gdbinit
-ln -s /home/mark/debian_rcfiles/rcfile/screenrc $HOME/.screenrc
-ln -s /home/mark/debian_rcfiles/rcfile/vimrc $HOME/.vimrc
-ln -s /home/mark/debian_rcfiles/mr/mrtrust $HOME/.mrtrust
+ln -s $HOME/debian_rcfiles/rcfile/bashrc $HOME/.bashrc
+ln -s $HOME/debian_rcfiles/rcfile/gdbinit $HOME/.gdbinit
+ln -s $HOME/debian_rcfiles/rcfile/screenrc $HOME/.screenrc
+ln -s $HOME/debian_rcfiles/rcfile/vimrc $HOME/.vimrc
+ln -s $HOME/debian_rcfiles/mr/mrtrust $HOME/.mrtrust
 
 # link nike mrconfig
 mkdir $HOME/RTK_workshop
@@ -31,3 +31,11 @@ ln -s /home/mark/debian_rcfiles/mr/nike_git_mrconfig $HOME/RTK_workshop/nike/git
 
 # install vimplugin
 tar xfz vimplugin.tgz -C $HOME
+
+# git ignore
+ln -s $HOME/debian_rcfiles/rcfile/global_ignore $HOME/.global_ignore
+ln -s $HOME/debian_rcfiles/rcfile/gitconfig $HOME/.gitconfig
+git config --global core.excludesfile $HOME/.global_ignore
+git config --global color.ui auto
+
+

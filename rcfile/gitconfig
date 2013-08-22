@@ -1,0 +1,4 @@
+[core]
+	excludesfile = /home/mark/.global_ignore
+[color]
+	ui = auto
