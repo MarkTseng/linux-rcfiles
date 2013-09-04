@@ -41,3 +41,7 @@ git config --global color.ui auto
 # cgdb
 mkdir $HOME/.cgdb
 ln -s $HOME/debian_rcfiles/rcfile/cgdbrc $HOME/.cgdb/cgdbrc
+
+# xterm-256color 
+mkdir -p $HOME/.terminfo/x/ 
+ln -s $HOME/debian_rcfiles/rcfile/xterm-256color $HOME/.terminfo/x/xterm-256color

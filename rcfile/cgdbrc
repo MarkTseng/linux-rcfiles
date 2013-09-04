@@ -1,7 +1,6 @@
 set arrowstyle=highlight
 set autosourcereload
 set tabstop=4
-set winsplit=top_big
 set showtgdbcommands
 hi Statement cterm=bold ctermfg=6
 hi PreProc cterm=bold ctermfg=4

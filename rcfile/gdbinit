@@ -6,6 +6,8 @@ target remote 192.168.135.50:12345
 
 #RTK
 set solib-search-path .:/usr/local/msdk-4.3.6-mips-EL-2.6.34-0.9.30.3_hwfpu/lib:/home/mark/RTK_workshop/nike/git/nike_git/system/lib:/home/mark/RTK_workshop/nike/git/nike_git/system/lib_release:/home/mark/RTK_workshop/nike/nike/nike_git/system/lib_release/gles_lib
+# RTK source directory
+directory .:../../src:../../src/Application
 handle SIG32 noprint nostop pass
 handle SIG33 noprint nostop pass
 handle SIG46 noprint nostop pass
