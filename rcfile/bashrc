@@ -197,7 +197,8 @@ alias gdb='gdb --command=$HOME/.gdbinit'
 #alias strace='strace -f -v -x -s 128'
 
 #Lint related
-exist jsl  && alias jsl='jsl -conf ~/Tools/jsl.conf -process'
+#exist jsl  && alias jsl='jsl -conf ~/Tools/jsl.conf -process'
+exist jsl  && alias jsl='jsl -process'
 if exist lint ; then
     alias lint-gnu='lint ~/makcomm/env-vim.lnt'
     alias lint-gnu-xml='lint-gnu ~/makcomm/env-xml.lnt'
