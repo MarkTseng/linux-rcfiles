@@ -1,6 +1,6 @@
 #file dtv_frontend_test
-file DvdPlayer
-#file TvServer
+#file DvdPlayer
+file TvServer
 target remote 192.168.135.50:12345
 #suma ngb
 #set solib-search-path .:/usr/local/msdk-4.3.6-mips-EL-2.6.34-0.9.30.3_hwfpu/lib:/home/mark/RTK_workshop/nike/suma/suma-ngb/system/lib:/home/mark/RTK_workshop/nike/suma/suma-ngb/system/lib_release:/home/mark/RTK_workshop/nike/suma/suma-ngb/system/lib_release/gles_lib
@@ -15,4 +15,4 @@ handle SIG48 noprint nostop pass
 handle SIG49 noprint nostop pass
 handle SIGUSR1 noprint nostop pass
 
-#b FrontendLib_SetTuner
+b FrontendLib_SetTuner
