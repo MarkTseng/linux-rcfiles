@@ -10,7 +10,16 @@ if [ $? -ne 0 ]; then
 	exit
 fi
 
-cd ../project/TvClient_Nike_ABS_S
+cd ../project/TvServer_Nike_ABS_S
+make release 2>&1 | tee ../../../TvServer_Nike_ABS_S.log
+
+if [ $? -ne 0 ]; then
+	echo "build fail ; see project_log file"
+	exit
+fi
+
+
+cd ../TvClient_Nike_ABS_S
 make release 2>&1 | tee ../../../TvClient_Nike_ABS_S.log
 
 if [ $? -ne 0 ]; then
