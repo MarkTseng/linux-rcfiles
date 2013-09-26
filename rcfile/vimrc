@@ -15,7 +15,7 @@
 " GitHub:        http://github.com/chenkaie/DotFiles/blob/master/.vimrc
 "                http://github.com/chenkaie/DotFiles/tree/master/.vim/
 "
-" Last Modified: Mon Jun 17, 2013  11:14AM
+" Last Modified: Thu Sep 26, 2013  03:21PM
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -56,6 +56,8 @@ set backspace=2
 set backup
 set backupdir=$HOME/.vim/backup/
 silent execute '!mkdir -p $HOME/.vim/backup'
+
+set backupskip=/tmp/*,/private/tmp/*
 
 syntax on
 set vb
