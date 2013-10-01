@@ -79,5 +79,5 @@ read pause
 
 # develop for install.img
 cd $CUR_DIR
-svn co http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/flash_environment/develop
+svn co -r553196 http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/flash_environment/develop
 echo "source code checkout done!"

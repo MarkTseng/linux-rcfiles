@@ -14,6 +14,7 @@ SCPU_IMG=$SCPU_DIR/system/tmp/develop.avhdd.nike.scpu.nand.nxx_img
 if [  ! -e .kcpu_rcS_update ]; then
 	echo "/sbin/ifconfig eth0 192.168.135.70 netmask 255.255.255.0" >> $KCPU_DIR/system/rootfs/shell.develop.avhdd.nike.kcpu.nand/etc/init.d/rcS
 	echo "/sbin/route add default gw 192.168.135.1 dev eth0" >> $KCPU_DIR/system/rootfs/shell.develop.avhdd.nike.kcpu.nand/etc/init.d/rcS
+	echo "/usr/local/bin/DtvStub &" >> $KCPU_DIR/system/rootfs/shell.develop.avhdd.nike.kcpu.nand/etc/init.d/rcS
 	touch .kcpu_rcS_update
 	echo "rcS update done!"
 	read pause
@@ -66,8 +67,8 @@ fi
 cd src
 make clean
 make
-cd $DtvStub_DIR/system/project/DtvStub
-make release
+#cd $DtvStub_DIR/system/project/DtvStub
+#make release
 echo "DtvStub compile done!"
 read pause
 
