@@ -28,6 +28,16 @@ cp nike_scpu/system/tmp/develop.avhdd.nike.scpu.nand.nxx_img/* develop/image_fil
 # recover rootfs
 #cp ../../root.nand.tvserver.tar.bz2 develop/image_file_avhdd/components/packages/package6/root.nand.tar.bz2 
 
+# replace private rcS file
+cd develop/image_file_avhdd/components/packages/package6/
+mkdir tmp
+tar xfj root.nand.tar.bz2 -C tmp
+cp /home/mark/RTK_workshop/rcS_tvserver tmp/usr/local/etc/rcS
+cd tmp/ ; tar cjvf ../root.nand.tar.bz2 *
+cd ../
+rm -rf tmp
+cd $CUR_DIR
+
 ## copy audio firmware image to packages6
 cp develop/image_file/components/Nxx/AV_FW/bluecore.audio.zip develop/image_file_avhdd/components/packages/package6/bluecore.audio.zip
 cp develop/image_file/components/Nxx/AV_FW/System.map.audio develop/image_file_avhdd/components/packages/package6/System.map.audio
