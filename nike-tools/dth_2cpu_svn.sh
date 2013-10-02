@@ -35,8 +35,8 @@ fi
 
 # SCPU
 cd $SCPU_DIR
-svn co -r523388 http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/linux-2.6.34
-svn co -r523388 http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/system
+svn co -rHEAD http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/linux-2.6.34
+svn co -rHEAD http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/system
 echo "SCPU SVN checkout done!"
 read pause
 
@@ -79,5 +79,5 @@ read pause
 
 # develop for install.img
 cd $CUR_DIR
-svn co -r553196 http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/flash_environment/develop
+svn co -rHEAD http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/flash_environment/develop
 echo "source code checkout done!"
