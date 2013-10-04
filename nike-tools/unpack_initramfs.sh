@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# http://forum.xda-developers.com/wiki/index.php?title=Extract_initramfs_from_zImage
+#
 zImage=$1
 #========================================================
 # find start of gziped kernel object in the zImage file:
