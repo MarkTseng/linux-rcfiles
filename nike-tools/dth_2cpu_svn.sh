@@ -35,14 +35,14 @@ fi
 
 # SCPU
 cd $SCPU_DIR
-svn co -r580238 http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/linux-2.6.34
+svn co -r580586 http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/linux-2.6.34
 svn co -r580239 http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/system
 echo "SCPU SVN checkout done!"
 read pause
 
 # KCPU
 cd $KCPU_DIR
-svn co -r519687 http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/OS/Linux/linux-2.6.34
+svn co -r580579 http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/OS/Linux/linux-2.6.34
 svn co -r508079 http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/OS/Linux/system
 echo "KCPU SVN checkout done!"
 read pause
