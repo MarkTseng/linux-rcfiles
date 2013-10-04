@@ -42,7 +42,7 @@ read pause
 
 # KCPU
 cd $KCPU_DIR
-svn co -r580579 http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/OS/Linux/linux-2.6.34
+svn co -r581014 http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/OS/Linux/linux-2.6.34
 svn co -r508079 http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/OS/Linux/system
 echo "KCPU SVN checkout done!"
 read pause
