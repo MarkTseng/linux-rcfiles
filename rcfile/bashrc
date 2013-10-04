@@ -14,7 +14,7 @@ export EDITOR=vim
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export dotfiles="/home/mark/.vim"
+export dotfiles="$HOME/.vim"
 
 exist () { type "$1" &> /dev/null; }
 #######################
@@ -408,11 +408,11 @@ export PATH=/usr/local/msdk-4.3.6-mips-EL-2.6.34-0.9.30.3_hwfpu/bin:$PATH
 #######################
 
 ## set my tools ##
-export PATH=/home/mark/debian_rcfiles/bin:/home/mark/debian_rcfiles/sbin:$PATH
+export PATH=$HOME/debian_rcfiles/bin:$HOME/debian_rcfiles/sbin:$PATH
 #######################
 
 ## set NIKE tools ##
-export PATH=/home/mark/debian_rcfiles/nike-tools:$PATH
+export PATH=$HOME/debian_rcfiles/nike-tools:$PATH
 #######################
 
 ## set CCACHE #########
