@@ -46,7 +46,7 @@ case $OS in
 
         # Homebrew stuff 
         if [ -x /usr/local/bin/brew ]; then
-            export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+			export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/findutils/bin:$PATH
             export MANPATH=/usr/local/share/man:$MANPATH
 
             # bash_completion if installed 
