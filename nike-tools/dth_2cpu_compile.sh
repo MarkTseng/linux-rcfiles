@@ -23,7 +23,7 @@ fi
 
 ##### Compile DTH 2CPU #####
 # SCPU 
-if [  ! -e .scpu_compiled ]; then
+if [ ! -e .scpu_compiled ]; then
 	cd $SCPU_DIR/system
 	make PRJ=develop.avhdd.nike.scpu.nand.nxx
 	touch .scpu_compiled
@@ -32,7 +32,7 @@ if [  ! -e .scpu_compiled ]; then
 fi
 
 # KCPU
-if [  ! -e .kcpu_compiled ]; then
+if [ ! -e .kcpu_compiled ]; then
 	cd $KCPU_DIR/system
 	make PRJ=develop.avhdd.nike.kcpu.nand.nxx 
 	touch .kcpu_compiled
@@ -42,7 +42,7 @@ fi
 
 # TvServerClient
 cd $TvServerClient_DIR/system
-if [  ! -e $CUR_DIR/.TvServerClient_MakeConfig_updated ]; then
+if [ ! -e $CUR_DIR/.TvServerClient_MakeConfig_updated ]; then
 	echo "check QUICK_CONFIG ENABLE_DTV_PROXY"
 	vi include/MakeConfig
 	touch $CUR_DIR/.TvServerClient_MakeConfig_updated
@@ -59,7 +59,7 @@ read pause
 
 # DtvStub
 cd $DtvStub_DIR/system
-if [  ! -e $CUR_DIR/.DtvStub_MakeConfig_updated ]; then
+if [ ! -e $CUR_DIR/.DtvStub_MakeConfig_updated ]; then
 	echo "check QUICK_CONFIG ENABLE_DTV_STUB"
 	vi include/MakeConfig
 	touch $CUR_DIR/.DtvStub_MakeConfig_updated
@@ -73,7 +73,7 @@ echo "DtvStub compile done!"
 read pause
 
 # AV FW compile
-if [  ! -e $CUR_DIR/.avfw_compiled ]; then
+if [ ! -e $CUR_DIR/.avfw_compiled ]; then
 	export PROJECT_HOME=$CUR_DIR
 	export PATH=$PATH:/usr/local/ws_tool_chain/nike/rsdk-1.4.2/linux/newlib/bin
 	if [ -f ${PROJECT_HOME}/software/regression/bashrc.regression ]; then
