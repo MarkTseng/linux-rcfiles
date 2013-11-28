@@ -39,8 +39,8 @@ rm -rf tmp
 cd $CUR_DIR
 
 ## copy audio firmware image to packages6
-cp develop/image_file/components/Nxx/AV_FW/bluecore.audio.zip develop/image_file_avhdd/components/packages/package6/bluecore.audio.zip
-cp develop/image_file/components/Nxx/AV_FW/System.map.audio develop/image_file_avhdd/components/packages/package6/System.map.audio
+cp develop/image_file/components/Nxx/bluecore.audio.zip develop/image_file_avhdd/components/packages/package6/bluecore.audio.zip
+cp develop/image_file/components/Nxx/System.map.audio develop/image_file_avhdd/components/packages/package6/System.map.audio
 #cp software/audio/src/Integrated/project/dvr_audio/bluecore.audio.zip develop/image_file_avhdd/components/packages/package6/bluecore.audio.zip
 #cp software/audio/src/Integrated/project/dvr_audio/bluecore.audio.text.zip develop/image_file_avhdd/components/packages/package6/bluecore.audio.text
 #cp software/audio/src/Integrated/project/dvr_audio/System.map.audio develop/image_file_avhdd/components/packages/package6/System.map.audio
@@ -56,5 +56,5 @@ cp -a $TvServerClient_DIR/system/project/TvServer_Nike_ABS_S/bin develop/image_f
 
 ## install.img
 cd develop/image_file_avhdd/
-make image install_ap=1 PACKAGES=package6
+make image install_ap=1 install_factory=1 factory_file=factory_DTH.tar PACKAGES=package6
 mv install.img $CUR_DIR

@@ -1,6 +1,6 @@
 #file dtv_frontend_test
-file DvdPlayer
-#file TvServer
+#file DvdPlayer
+file TvServer
 #file TvClient
 target remote 192.168.135.50:12345
 #suma ngb
@@ -20,3 +20,5 @@ handle SIGUSR1 noprint nostop pass
 #b DirectFBCreate
 #b ClientManager::Initialize
 #b DisplayArea
+b PlayNumberChannel
+#b ReloadLastPlayedSource

@@ -38,7 +38,7 @@ cp ../image_file/components/SQA_DailyBuild/AV_FW/bluecore.video.zip components/p
 rm -rf components/packages/package2/AP/bin
 cp -a ../../system/project/TvServer_Nike_ABS_S/bin components/packages/package2/AP/
 #make image install_ap=1 install_bootloader=1 hash_imgfile=1 install_factory=1 factory_file=factory_GS.tar PACKAGES=package2
-make image install_ap=1 hash_imgfile=1 install_factory=1 factory_file=factory_SY.tar PACKAGES=package2
+make image install_ap=1 hash_imgfile=1 install_factory=1 factory_file=factory_DTH.tar PACKAGES=package2
 #make image install_ap=1 hash_imgfile=1 install_factory=1 factory_file=factory_GS.tar PACKAGES=package2
 mv install.img $CUR_DIR
 
