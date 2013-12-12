@@ -40,6 +40,8 @@ if [ ! -e .kcpu_compiled ]; then
 	read pause
 fi
 
+ccache -c
+ccache -C
 # TvServerClient
 cd $TvServerClient_DIR/system
 if [ ! -e $CUR_DIR/.TvServerClient_MakeConfig_updated ]; then
@@ -57,6 +59,8 @@ make release
 echo "TvServerClient compile done"
 read pause
 
+ccache -c
+ccache -C
 # DtvStub
 cd $DtvStub_DIR/system
 if [ ! -e $CUR_DIR/.DtvStub_MakeConfig_updated ]; then
