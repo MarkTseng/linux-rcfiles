@@ -449,3 +449,12 @@ export LS_COLORS
 #export LANG=C
 #export LC_ALL=C
 #######################
+
+## powerline ##########
+function _update_ps1() {
+	export PS1="$(~/powerline-shell.py $? 2> /dev/null)"
+}
+
+export PROMPT_COMMAND="_update_ps1"
+
+#######################
