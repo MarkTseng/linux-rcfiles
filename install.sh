@@ -45,3 +45,14 @@ ln -s $HOME/debian_rcfiles/rcfile/cgdbrc $HOME/.cgdb/cgdbrc
 # xterm-256color 
 mkdir -p $HOME/.terminfo/x/ 
 ln -s $HOME/debian_rcfiles/rcfile/xterm-256color $HOME/.terminfo/x/xterm-256color
+
+# powerlin install
+cd $HOME/debian_rcfiles/powerlin
+./setup.py build
+sudo ./setup.py install
+
+# powerlin shell install
+cd $HOME/debian_rcfiles/powerlin-shell
+./install.py
+ln -s $HOME/debian_rcfiles/powerlin-shell/powerlin-shell.py ~/powerline-shell.py
+
