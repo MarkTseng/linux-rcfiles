@@ -54,5 +54,5 @@ sudo ./setup.py install
 # powerlin shell install
 cd $HOME/debian_rcfiles/powerlin-shell
 ./install.py
-ln -s $HOME/debian_rcfiles/powerlin-shell/powerlin-shell.py ~/powerline-shell.py
+ln -s $HOME/debian_rcfiles/powerlin-shell/powerline-shell.py ~/powerline-shell.py
 
