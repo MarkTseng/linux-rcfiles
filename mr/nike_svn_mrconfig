@@ -3,10 +3,10 @@
 #
 
 [nike_svn]
-checkout = svn checkout -N http://cadinfo.realtek.com/svn/col/DVR/branches/software nike_svn
+checkout = svn checkout -N http://cadinfo.realtek.com/svn/col/DVR/branches/software_stb nike_svn
 
 [nike_svn/common_nike]
-checkout = svn checkout http://cadinfo.realtek.com/svn/col/DVR/nike/software/common common_nike
+checkout = svn checkout http://cadinfo.realtek.com/svn/col/DVR/branches/software_stb/common_nike common_nike
 
 [nike_svn/develop]
 checkout = svn checkout http://cadinfo.realtek.com/svn/col/DVR/nike/software/system/flash_environment/develop
