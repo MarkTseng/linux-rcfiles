@@ -13,6 +13,7 @@ export TERM=xterm-256color
 export EDITOR=vim
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
 
 export dotfiles="$HOME/.vim"
 
@@ -337,6 +338,14 @@ exist lesspipe && eval "$(lesspipe)"
 #######################
 # Functions           # 
 #######################
+
+# git loop
+
+function git_pull_loop()
+{
+	for dir in `ls`; do cd $dir ; git pull ; cd .. ;done
+}
+
 
 # Easy extract
 extract () 
