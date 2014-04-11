@@ -429,6 +429,9 @@ export PATH=$HOME/debian_rcfiles/nike-tools:$PATH
 export CCACHE_DIR=/dev/shm
 #######################
 
+## MAKEFLAGS ##########
+# export MAKEFLAGS="-j $(grep -c ^processor /proc/cpuinfo)"
+#######################
 
 ##  skip unknow stty key ##
 stty erase ^?
