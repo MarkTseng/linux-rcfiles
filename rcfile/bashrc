@@ -468,5 +468,8 @@ function _update_ps1() {
 }
 
 export PROMPT_COMMAND="_update_ps1"
+#######################
 
+## cowsay #############
+[[ "$PS1" ]] && /usr/games/fortune | /usr/games/cowsay -n
 #######################

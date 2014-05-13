@@ -132,13 +132,13 @@ bindkey "^[[A" number 1
 bindkey -k k; detach
 
 # set the title for the default shell or specified program.
-screen -t minicom    0 
-screen -t minicom    1 
-screen -t dvdplayer     2 
-screen -t dvdplayer     3 
-screen -t DTH     4 
-screen -t DTH     5 
-screen -t DTH     6 
+screen -t Tab0     0 
+screen -t Tab1     1 
+screen -t Tab2     2 
+screen -t Tab3     3 
+screen -t Tab4     4 
+screen -t Tab5     5 
+screen -t Tab6     6 
 screen -t Tab7     7 
 screen -t Tab8     8 
 screen -t Tab9     9 
