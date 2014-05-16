@@ -412,6 +412,10 @@ function counter()
     fi
 }
 
+function set2env()
+{
+	export PATH=$PWD:$PATH
+}
 
 ## set MIPS toolchain ##
 # export PATH=/usr/local/msdk-4.3.6-mips-EL-2.6.34-0.9.30.3_hwfpu/bin:$PATH
