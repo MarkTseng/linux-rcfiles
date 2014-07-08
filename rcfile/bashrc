@@ -431,7 +431,8 @@ export PATH=$HOME/debian_rcfiles/nike-tools:$PATH
 
 ## set CCACHE #########
 export USE_CCACHE=1
-export CCACHE_DIR=/dev/shm
+export CCACHE_DIR=$HOME/ccache_pool
+ccache -M 50G
 #######################
 
 ## MAKEFLAGS ##########
