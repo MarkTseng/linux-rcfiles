@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo dpkg-reconfigure dash 
-sudo apt-get install debian-builder ctags cscope curl colordiff screen ncftp subversion git tig m4 bison g++ libz-dev flex libncurses5-dev gperf iperf gawk autoconf texinfo libfreetype6-dev dos2unix build-essential vim libstring-crc32-perl ccache libfreetype6 tcl8.5 unzip pkg-config git-core gnupg zip zlib1g-dev libc6-dev x11proto-core-dev libx11-dev python-markdown libxml2-utils tofrodos mingw32 g++-multilib libgl1-mesa-dev lzma htop mr luarocks lua5.1 liblua5.1-0-dev git-svn spawn-fcgi libfcgi-dev libmysqlclient-dev samba cgdb apt-file python-setuptools python-fontforge sshfs rar unrar lib32z1-dev fortune cowsay lynx-cur tftpd-hpa iotop
+sudo apt-get install debian-builder ctags cscope curl colordiff screen ncftp subversion git tig m4 bison g++ libz-dev flex libncurses5-dev gperf iperf gawk autoconf texinfo libfreetype6-dev dos2unix build-essential vim libstring-crc32-perl ccache libfreetype6 tcl8.5 unzip pkg-config git-core gnupg zip zlib1g-dev libc6-dev x11proto-core-dev libx11-dev python-markdown libxml2-utils tofrodos mingw32 g++-multilib libgl1-mesa-dev lzma htop mr luarocks lua5.1 liblua5.1-0-dev git-svn spawn-fcgi libfcgi-dev libmysqlclient-dev samba cgdb apt-file python-setuptools python-fontforge sshfs rar unrar lib32z1-dev fortune cowsay lynx-cur tftpd-hpa iotop vnc4server openbox openbox-themes memu
 
 # set samba 
 sudo smbpasswd -a mark
@@ -54,5 +54,9 @@ sudo ./setup.py install
 # powerline shell install
 cd $HOME/debian_rcfiles/powerline-shell
 ./install.py
-ln -s $HOME/debian_rcfiles/powerline-shell/powerline-shell.py ~/powerline-shell.py
+ln -s $HOME/debian_rcfiles/powerline-shell/powerline-shell.py $HOME/powerline-shell.py
 
+# vnc4server
+vnc4server
+vnc4server -kill :1
+ln -s $HOME/debian_rcfiles/xstartup $HOME/.vnc/xstartup
