@@ -67,3 +67,7 @@ sudo mkdir /tftp
 sudo chmod 777 /tftp
 sudo rm -rf /etc/default/tftpd-hpa
 sudo cp $HOME/debian_rcfiles/rcfile/tftpd-hpa /etc/default/tftpd-hpa
+
+# ccache 
+sudo mkdir /ccache_pool
+sudo chmod 777 /ccache_pool
