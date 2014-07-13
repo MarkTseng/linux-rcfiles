@@ -479,3 +479,7 @@ export LS_COLORS
 ## cowsay #############
 [[ "$PS1" ]] && /usr/games/fortune | /usr/games/cowsay -n
 #######################
+
+## android setting ####
+export LEGACY_USE_JAVA6=1
+#######################
