@@ -370,6 +370,17 @@ extract ()
   fi
 }
 
+untar ()
+{
+	if [ -n "$1" ] ; then
+		OPT=$1
+		FILE=$2
+		pv $FILE | tar $OPT -
+	else
+		echo "usage: untar tar_option file_name"
+	fi
+}
+
 # easy compress - archive wrapper
 compress ()
 {
