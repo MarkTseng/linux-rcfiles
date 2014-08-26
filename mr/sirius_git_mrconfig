@@ -1,0 +1,52 @@
+# nike .mrconfig
+#
+#
+
+[sirius_git/common_sirius]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/sirius/software/common common_sirius
+update = git svn fetch
+
+[sirius_git/image_file_creator]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/sirius/software/system/flash_environment/image_file_creator
+update = git svn fetch
+
+[sirius_git/SQA_DailyBuild]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/sirius/software/system/flash_environment/SQA_DailyBuild
+update = git svn fetch
+
+[sirius_git/system/src]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software/system/src
+update = git svn fetch
+
+[sirius_git/system/include]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software/system/include
+update = git svn fetch
+
+[sirius_git/system/lib]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software/system/lib
+update = git svn fetch
+
+[sirius_git/system/lib_release]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software/system/lib_release
+update = git svn fetch
+
+[sirius_git/system/project/TvServer]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software/system/project/TvServer
+update = git svn fetch
+
+[sirius_git/system/project/WatchDogApp]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software/system/project/WatchDogApp
+update = git svn fetch
+
+[sirius_git/kernel/linux/linux-3.7.2]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/sirius/software/system/kernel/linux/linux-3.7.2
+update = git svn fetch  
+
+[sirius_git/kernel/system]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/system
+update = git svn fetch  
+
+[sirius_git/kernel/android/KK]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/MM/mmandroid/branches/kitkat_442_tv001 KK
+update = git svn fetch 
+
