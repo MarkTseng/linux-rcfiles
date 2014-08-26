@@ -34,6 +34,10 @@ update = git svn fetch
 checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software/system/project/TvServer
 update = git svn fetch
 
+[sirius_git/system/project/TvSC_Generic]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software/system/project/TvSC_Generic
+update = git svn fetch
+
 [sirius_git/system/project/WatchDogApp]
 checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software/system/project/WatchDogApp
 update = git svn fetch
@@ -43,10 +47,14 @@ checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/sirius/so
 update = git svn fetch  
 
 [sirius_git/kernel/system]
-checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/system
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/sirius/software/system/kernel/system
 update = git svn fetch  
 
 [sirius_git/kernel/android/KK]
 checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/MM/mmandroid/branches/kitkat_442_tv001 KK
+update = git svn fetch 
+
+[stb001_kk_1805]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/sirius/software/system/scripts/stb001_kk_1805
 update = git svn fetch 
 
