@@ -4,6 +4,8 @@ sudo apt-get install debian-builder exuberant-ctags cscope curl colordiff screen
 
 # set samba 
 sudo smbpasswd -a mark
+sudo vi /etc/samba/smb.conf 
+sudo /etc/init.d/smbd restart
 
 # install NFS
 sudo apt-get install nfs-common nfs-kernel-server portmap
@@ -63,8 +65,9 @@ rm -rf $HOME/.vnc/xstartup
 ln -s $HOME/debian_rcfiles/rcfile/xstartup $HOME/.vnc/xstartup
 
 # tftp
-sudo mkdir /tftp
-sudo chmod 777 /tftp
+sudo mkdir $HOME/tftp
+sudo chmod 777 $HOME/tftp
+sudo ln -s $HOME/tftp /tftp
 sudo rm -rf /etc/default/tftpd-hpa
 sudo cp $HOME/debian_rcfiles/rcfile/tftpd-hpa /etc/default/tftpd-hpa
 
