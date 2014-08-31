@@ -1,2 +1,5 @@
 sudo aptitude install minidlna
-vi /etc/minidlna.conf
+sudo cp minidlna.conf /etc/
+mkdir /var/cache/minidlna
+chown -R minidlna.minidlna /var/cache/minidlna
+
