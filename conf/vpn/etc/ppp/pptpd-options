@@ -52,7 +52,7 @@ require-mppe-128
 # specifies the secondary DNS address.
 # Attention! This information may not be taken into account by a Windows
 # client. See KB311218 in Microsoft's knowledge base for more information.
-ms-dns 168.95.192.1
+ms-dns 8.8.8.8
 #ms-dns 10.0.0.2
 
 # If pppd is acting as a server for Microsoft Windows or "Samba"
@@ -79,7 +79,7 @@ nodefaultroute
 
 # Enable connection debugging facilities.
 # (see your syslog configuration for where pppd sends to)
-debug
+#debug
 
 # Print out all the option values which have been set.
 # (often requested by mailing list to verify options)
