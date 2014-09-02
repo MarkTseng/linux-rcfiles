@@ -136,7 +136,7 @@ alias less='less -R --tabs=4'       # colorful 'less', tab stops = 4
 alias more='less'
 alias mkdir='mkdir -p -v'
 alias reload='source ~/.bashrc'
-alias wget='wget --progress=dot -c'
+alias wget='wget --progress=bar -c'
 alias which='type -a'
 alias quota='quota'
 alias grep='grep --color'
