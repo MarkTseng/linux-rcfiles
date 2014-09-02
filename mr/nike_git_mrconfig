@@ -42,10 +42,19 @@ update = git svn fetch
 checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software/system/project/WatchDogApp
 update = git svn fetch
 
-[kernel/linux-2.6.34]
+[nike_git/kernel/linux-2.6.34]
 checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/linux-2.6.34 
 update = git svn fetch  
 
-[kernel/system]
+[nike_git/kernel/system]
 checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/venus/software/system/OS/Linux/system
 update = git svn fetch  
+
+[nike_git/bootcode/ASIC]
+checkout = git svn clone -rHEAD http://172.21.0.100/svn/col/DVR/nike/software/system/flash_environment/Bootcode/ASIC
+update = git svn fetch  
+
+[nike_git/bootcode/toolchain]
+checkout = git svn clone -rHEAD http://172.21.0.100/svn/col/DVR/nike/software/system/flash_environment/Bootcode/toolchain
+update = git svn fetch  
+
