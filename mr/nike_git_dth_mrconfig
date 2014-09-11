@@ -34,6 +34,10 @@ update = git svn fetch
 checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software_stb/system/project/TvServer_Nike_ABS_S 
 update = git svn fetch  
 
+[nike_dth_git/TvServerClient/system/project/WatchDogApp]
+checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software_stb/system/project/WatchDogApp 
+update = git svn fetch  
+
 ### DtvStub ###
 [nike_dth_git/DtvStub/common_nike]
 checkout = git svn clone -rHEAD http://cadinfo.realtek.com/svn/col/DVR/branches/software_stb/common_nike
