@@ -1,5 +1,5 @@
-debian_rcfile
+ubuntu12.04_rcfiles
 =============
 
-debian rcfile
-nike tools 
+ubuntu-12.04 rcfiles and vim plugin
+
