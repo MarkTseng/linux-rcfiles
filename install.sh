@@ -17,59 +17,59 @@ sudo chmod 644 /etc/exports
 rm -rf $HOME/.bashrc
 
 # link rcfile
-ln -s $HOME/debian_rcfiles/rcfile/bashrc $HOME/.bashrc
-ln -s $HOME/debian_rcfiles/rcfile/gdbinit $HOME/.gdbinit
-ln -s $HOME/debian_rcfiles/rcfile/screenrc $HOME/.screenrc
-ln -s $HOME/debian_rcfiles/rcfile/vimrc $HOME/.vimrc
-ln -s $HOME/debian_rcfiles/mr/mrtrust $HOME/.mrtrust
+ln -s $HOME/ubuntu-12.04_rcfiles/rcfile/bashrc $HOME/.bashrc
+ln -s $HOME/ubuntu-12.04_rcfiles/rcfile/gdbinit $HOME/.gdbinit
+ln -s $HOME/ubuntu-12.04_rcfiles/rcfile/screenrc $HOME/.screenrc
+ln -s $HOME/ubuntu-12.04_rcfiles/rcfile/vimrc $HOME/.vimrc
+ln -s $HOME/ubuntu-12.04_rcfiles/mr/mrtrust $HOME/.mrtrust
 
 # link nike mrconfig
 mkdir $HOME/RTK_workshop
 mkdir $HOME/RTK_workshop/nike
 mkdir $HOME/RTK_workshop/nike/svn
 mkdir $HOME/RTK_workshop/nike/git
-ln -s /home/mark/debian_rcfiles/mr/nike_svn_mrconfig $HOME/RTK_workshop/nike/svn/.mrconfig
-ln -s /home/mark/debian_rcfiles/mr/nike_git_mrconfig $HOME/RTK_workshop/nike/git/.mrconfig
+ln -s /home/mark/ubuntu-12.04_rcfiles/mr/nike_svn_mrconfig $HOME/RTK_workshop/nike/svn/.mrconfig
+ln -s /home/mark/ubuntu-12.04_rcfiles/mr/nike_git_mrconfig $HOME/RTK_workshop/nike/git/.mrconfig
 
 # install vimplugin
 tar xfz vimplugin.tgz -C $HOME
 
 # git ignore
-ln -s $HOME/debian_rcfiles/rcfile/global_ignore $HOME/.global_ignore
-ln -s $HOME/debian_rcfiles/rcfile/gitconfig $HOME/.gitconfig
+ln -s $HOME/ubuntu-12.04_rcfiles/rcfile/global_ignore $HOME/.global_ignore
+ln -s $HOME/ubuntu-12.04_rcfiles/rcfile/gitconfig $HOME/.gitconfig
 git config --global core.excludesfile $HOME/.global_ignore
 git config --global color.ui auto
 
 # cgdb
 mkdir $HOME/.cgdb
-ln -s $HOME/debian_rcfiles/rcfile/cgdbrc $HOME/.cgdb/cgdbrc
+ln -s $HOME/ubuntu-12.04_rcfiles/rcfile/cgdbrc $HOME/.cgdb/cgdbrc
 
 # xterm-256color 
 mkdir -p $HOME/.terminfo/x/ 
-ln -s $HOME/debian_rcfiles/rcfile/xterm-256color $HOME/.terminfo/x/xterm-256color
+ln -s $HOME/ubuntu-12.04_rcfiles/rcfile/xterm-256color $HOME/.terminfo/x/xterm-256color
 
 # powerline install
-cd $HOME/debian_rcfiles/powerline
+cd $HOME/ubuntu-12.04_rcfiles/powerline
 ./setup.py build
 sudo ./setup.py install
 
 # powerline shell install
-#cd $HOME/debian_rcfiles/powerline-shell
+#cd $HOME/ubuntu-12.04_rcfiles/powerline-shell
 #./install.py
-#ln -s $HOME/debian_rcfiles/powerline-shell/powerline-shell.py $HOME/powerline-shell.py
+#ln -s $HOME/ubuntu-12.04_rcfiles/powerline-shell/powerline-shell.py $HOME/powerline-shell.py
 
 # vnc4server
 vnc4server
 vnc4server -kill :1
 rm -rf $HOME/.vnc/xstartup
-ln -s $HOME/debian_rcfiles/rcfile/xstartup $HOME/.vnc/xstartup
+ln -s $HOME/ubuntu-12.04_rcfiles/rcfile/xstartup $HOME/.vnc/xstartup
 
 # tftp
 sudo mkdir $HOME/tftp
 sudo chmod 777 $HOME/tftp
 sudo ln -s $HOME/tftp /tftp
 sudo rm -rf /etc/default/tftpd-hpa
-sudo cp $HOME/debian_rcfiles/rcfile/tftpd-hpa /etc/default/tftpd-hpa
+sudo cp $HOME/ubuntu-12.04_rcfiles/rcfile/tftpd-hpa /etc/default/tftpd-hpa
 
 # ccache 
 sudo mkdir /ccache_pool
