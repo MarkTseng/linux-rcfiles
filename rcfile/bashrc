@@ -448,11 +448,11 @@ function code2html()
 #######################
 
 ## set my tools ##
-export PATH=$HOME/ubuntu-12.04_rcfiles/bin:$HOME/ubuntu-12.04_rcfiles/sbin:$PATH
+export PATH=$HOME/debian_rcfiles/bin:$HOME/ubuntu-12.04_rcfiles/sbin:$PATH
 #######################
 
 ## set NIKE tools ##
-export PATH=$HOME/ubuntu-12.04_rcfiles/nike-tools:$PATH
+export PATH=$HOME/debian_rcfiles/nike-tools:$PATH
 #######################
 
 ## set CCACHE #########
