@@ -511,5 +511,5 @@ export LEGACY_USE_JAVA6=1
 #######################
 
 ## python setting #####
-export PYTHONSTARTUP="~/.pythonstartup.py" 
+export PYTHONSTARTUP="$HOME/.pythonstartup.py" 
 #######################
