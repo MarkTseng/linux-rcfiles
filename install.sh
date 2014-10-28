@@ -74,3 +74,6 @@ sudo cp $HOME/ubuntu-12.04_rcfiles/rcfile/tftpd-hpa /etc/default/tftpd-hpa
 # ccache 
 sudo mkdir /ccache_pool
 sudo chmod 777 /ccache_pool
+
+# python auto complete
+ln -s $HOME/ubuntu-12.04_rcfiles/rcfile/pythonstartup.py $HOME/.pythonstartup.py

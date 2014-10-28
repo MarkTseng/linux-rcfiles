@@ -509,3 +509,7 @@ export LS_COLORS
 ## android setting ####
 export LEGACY_USE_JAVA6=1
 #######################
+
+## python setting #####
+export PYTHONSTARTUP="~/.pythonstartup.py" 
+#######################
