@@ -3,5 +3,8 @@
 [color]
 	ui = auto
 [user]
-	email = chunjen.tseng@gmail.com
-	name = Mark Tseng
+	email = mark.tseng@realtek.com
+	name = mark.tseng
+[alias]
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
