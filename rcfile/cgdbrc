@@ -1,9 +1,0 @@
-set arrowstyle=highlight
-set autosourcereload
-set tabstop=4
-set showtgdbcommands
-hi Statement cterm=bold ctermfg=6
-hi PreProc cterm=bold ctermfg=4
-hi IncSearch ctermfg=2
-hi LineHighlight cterm=bold ctermfg=3 ctermbg=4
-

@@ -1,2 +1,0 @@
-#!/bin/bash
-sudo sshfs mark@farmersale.no-ip.org:/home/mark $HOME/B33E -o allow_other
