@@ -1,0 +1,17 @@
+
+# Write your summary at first line, Follow format: [related jira number][modlue name] <title>
+#Don't remove next blank line
+
+#Don't remove above blank line
+:Release Notes:
+
+
+:Detailed Notes:
+- Problem : 
+- RootCause : 
+- Solution : 
+- Author : 
+- Build : 
+
+:Testing Preformed:
+How to Test :
