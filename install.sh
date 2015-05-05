@@ -37,6 +37,7 @@ tar xfz vimplugin.tgz -C $HOME
 # git ignore
 ln -s $HOME/linux-rcfiles/rcfile/global_ignore $HOME/.global_ignore
 ln -s $HOME/linux-rcfiles/rcfile/gitconfig $HOME/.gitconfig
+ln -s $HOME/linux-rcfiles/rcfile/gitmessage.txt $HOME/.gitmessage.txt
 git config --global core.excludesfile $HOME/.global_ignore
 git config --global color.ui auto
 
