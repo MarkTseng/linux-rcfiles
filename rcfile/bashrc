@@ -198,6 +198,9 @@ alias objdump='objdump -d -S -hrt'
 alias gdb='gdb --command=$HOME/.gdbinit'
 #alias strace='strace -f -v -x -s 128'
 
+# ssh proxy
+alias ssh_proxy='ssh -o ProxyCommand="/usr/bin/corkscrew 192.168.0.101 1080 %h %p"'
+
 #Lint related
 #exist jsl  && alias jsl='jsl -conf ~/Tools/jsl.conf -process'
 exist jsl  && alias jsl='jsl -process'
