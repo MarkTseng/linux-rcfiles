@@ -150,7 +150,7 @@ alias xmllint='xmllint --noout'
 
 #export GREP_OPTIONS="--exclude-dir=\*/.svn/\* --exclude=\*~ --exclude=\*.swp"
 #alias wcgrep='wcgrep -inh --colour=auto' has been defined in wcgrep
-alias diff='colordiff -ruN --exclude=".gitignore" --exclude=".svn"'
+alias diff='colordiff -ruN --exclude=".gitignore" --exclude=".svn" --exclude=".git"'
 #alias diff='colordiff.pl'
 
 # Moving around & all that jazz
