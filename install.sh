@@ -7,6 +7,11 @@ sudo smbpasswd -a mark
 sudo vi /etc/samba/smb.conf 
 sudo /etc/init.d/smbd restart
 
+# subversion 1.6
+#echo "http://us.archive.ubuntu.com/ubuntu precise main" >> /etc/apt/sources.list
+#apt-get update
+#apt-get -t precise install libsvn1 subversion. 
+
 # install NFS
 sudo apt-get install nfs-common nfs-kernel-server portmap
 sudo chmod 777 /etc/exports
