@@ -10,6 +10,6 @@
 	st = status -uno
 	pull = pull --rebase
 [commit]
-	#template = /home/mark/.gitmessage.txt
+	template = /home/mark/.gitmessage.txt
 [push]
 	default = matching
