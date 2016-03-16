@@ -462,7 +462,15 @@ export PATH=$HOME/linux-rcfiles/nike-tools:$PATH
 ## set CCACHE #########
 export USE_CCACHE=1
 export CCACHE_DIR=/ccache_pool
-ccache -M 20G
+case $OS in
+    Darwin|*BSD)
+    ;;
+
+    Linux)
+	ccache -M 20G
+    ;;
+esac
+
 #######################
 
 ## MAKEFLAGS ##########
@@ -507,7 +515,15 @@ export LS_COLORS
 #######################
 
 ## cowsay #############
-[[ "$PS1" ]] && /usr/games/fortune | /usr/games/cowsay -n
+case $OS in
+    Darwin|*BSD)
+	[[ "$PS1" ]] && /opt/local/bin/fortune | /opt/local/bin/cowsay -n
+    ;;
+
+    Linux)
+	[[ "$PS1" ]] && /usr/games/fortune | /usr/games/cowsay -n
+    ;;
+esac
 #######################
 
 ## android setting ####
