@@ -15,7 +15,7 @@
 " GitHub:        http://github.com/chenkaie/DotFiles/blob/master/.vimrc
 "                http://github.com/chenkaie/DotFiles/tree/master/.vim/
 "
-" Last Modified: Thu Mar 17, 2016  12:29AM
+" Last Modified: Thu Mar 17, 2016  10:49AM
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -434,7 +434,7 @@ com! DiffSaved call s:DiffWithSaved()
 nmap ,d :DiffSaved<CR>
 
 "pythondict
-let g:pydiction_location = '/Users/mark/.vim/complete-dict'
+let g:pydiction_location = '~/.vim/complete-dict'
 
 "DirDiff
 let g:DirDiffExcludes = "*.git,*.svn,.*.swp,tags,cscope.*"
