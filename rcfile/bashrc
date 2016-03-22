@@ -150,7 +150,7 @@ alias xmllint='xmllint --noout'
 
 #export GREP_OPTIONS="--exclude-dir=\*/.svn/\* --exclude=\*~ --exclude=\*.swp"
 #alias wcgrep='wcgrep -inh --colour=auto' has been defined in wcgrep
-alias diff='colordiff -ruN --exclude=".gitignore" --exclude=".svn"'
+alias diff='colordiff -ruN --exclude=".gitignore" --exclude=".svn" --exclude=".git"'
 #alias diff='colordiff.pl'
 
 # Moving around & all that jazz
@@ -197,6 +197,9 @@ alias gcc='gcc -Wall -g3 -fno-omit-frame-pointer -fno-inline -Wcast-align -Wpadd
 alias objdump='objdump -d -S -hrt'
 alias gdb='gdb --command=$HOME/.gdbinit'
 #alias strace='strace -f -v -x -s 128'
+
+# ssh proxy
+alias ssh_proxy='ssh -o ProxyCommand="/usr/bin/corkscrew 192.168.0.101 1080 %h %p"'
 
 #Lint related
 #exist jsl  && alias jsl='jsl -conf ~/Tools/jsl.conf -process'
@@ -459,7 +462,15 @@ export PATH=$HOME/linux-rcfiles/nike-tools:$PATH
 ## set CCACHE #########
 export USE_CCACHE=1
 export CCACHE_DIR=/ccache_pool
-ccache -M 20G
+case $OS in
+    Darwin|*BSD)
+    ;;
+
+    Linux)
+	ccache -M 20G
+    ;;
+esac
+
 #######################
 
 ## MAKEFLAGS ##########
@@ -504,7 +515,15 @@ export LS_COLORS
 #######################
 
 ## cowsay #############
-[[ "$PS1" ]] && /usr/games/fortune | /usr/games/cowsay -n
+case $OS in
+    Darwin|*BSD)
+	[[ "$PS1" ]] && /opt/local/bin/fortune | /opt/local/bin/cowsay -n
+    ;;
+
+    Linux)
+	[[ "$PS1" ]] && /usr/games/fortune | /usr/games/cowsay -n
+    ;;
+esac
 #######################
 
 ## android setting ####

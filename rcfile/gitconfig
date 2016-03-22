@@ -8,5 +8,8 @@
 [alias]
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	st = status -uno
+	pull = pull --rebase
 [commit]
-	#template = /home/mark/.gitmessage.txt
+	template = /home/mark/.gitmessage.txt
+[push]
+	default = matching

@@ -53,4 +53,4 @@ Thumbs.db
 *.exe
 *.out
 *.app
-
+*.o.cmd

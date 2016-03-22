@@ -142,7 +142,9 @@ screen -t Tab6     6
 screen -t Tab7     7 
 screen -t Tab8     8 
 screen -t Tab9     9 
-screen -t Top      10 htop
+screen -t Tab10     10 
+screen -t Tab11     11 
+screen -t htop      12 htop
 
 # Start at window 1
 bind c screen 1
