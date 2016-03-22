@@ -4,7 +4,9 @@ sudo apt-get install debian-builder exuberant-ctags cscope curl colordiff screen
 
 # set samba 
 sudo smbpasswd -a mark
-sudo vi /etc/samba/smb.conf 
+#sudo vi /etc/samba/smb.conf
+sudo rm -rf /etc/samba/smb.conf
+ln -s $HOME/linux-rcfiles/rcfile/smb.conf /etc/samba/smb.conf
 sudo /etc/init.d/smbd restart
 
 # install NFS
