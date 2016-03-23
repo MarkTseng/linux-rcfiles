@@ -15,15 +15,15 @@
 " GitHub:        http://github.com/chenkaie/DotFiles/blob/master/.vimrc
 "                http://github.com/chenkaie/DotFiles/tree/master/.vim/
 "
-" Last Modified: Thu Mar 17, 2016  10:49AM
+" Last Modified: Wed Mar 23, 2016  04:14PM
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " [ General Setting ]                                                        {{{
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Use Vim settings, rather then Vi settings (much better!). This must be first, because it changes other options as a side effect.
 set nocompatible
+execute pathogen#infect()
 
 "has("mac") & has("macunix") just work for MacVim
 if match(system('uname'),'Darwin') == 0
@@ -64,7 +64,7 @@ set vb
 set noswapfile
 
 "add runtimepath to make 'vim -u ~kent/.vimrc" work properly
-set runtimepath+=~mark/.vim
+set runtimepath+=~/.vim
 
 if &term == "xterm-color" || &term == "xterm-16color"
     set t_Co=16
@@ -412,6 +412,24 @@ nmap tt :call SwitchLastUsedTab()<CR>
 " }}}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" [ python related ]                                                           {{{
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"pythondict
+"let g:pydiction_location = '~/.vim/complete-dict'
+
+"jedi-vim
+let g:jedi#goto_command = "<leader>d"
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#completions_command = "<C-p>"
+let g:jedi#rename_command = "<leader>r"
+
+" }}}
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " [ Diff related ]                                                           {{{
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -432,9 +450,6 @@ function! s:DiffWithSaved()
 endfunction
 com! DiffSaved call s:DiffWithSaved()
 nmap ,d :DiffSaved<CR>
-
-"pythondict
-let g:pydiction_location = '~/.vim/complete-dict'
 
 "DirDiff
 let g:DirDiffExcludes = "*.git,*.svn,.*.swp,tags,cscope.*"
