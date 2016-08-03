@@ -124,7 +124,7 @@ alias cs_build='cscope -q -R -b -i cscope.files'
 #alias tree='tree -Cs'              # nice alternative to 'ls'
 alias vim='vim -X -p'
 alias vi='vim'
-alias cp='cp -i'
+#alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 alias df='df -kTh'
@@ -232,7 +232,7 @@ export HISTIGNORE="&:bg:fg:ll:h"
 #Specify that it (Ctrl+D) must pressed twice to exit Bash
 export IGNOREEOF=1
 
-set -o noclobber 
+set +o noclobber 
 set -o notify
 #set -o xtrace          # Useful for debuging.
 
@@ -448,7 +448,7 @@ function code2html()
 }
 
 ## set MIPS toolchain ##
-# export PATH=/usr/local/msdk-4.3.6-mips-EL-2.6.34-0.9.30.3_hwfpu/bin:$PATH
+export PATH=/home/mark/mstar_workshop/toolchain/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/bin:$PATH
 #######################
 
 ## set my tools ##
