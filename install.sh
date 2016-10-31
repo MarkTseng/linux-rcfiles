@@ -1,12 +1,12 @@
 #!/bin/bash
 sudo dpkg-reconfigure dash 
-sudo apt-get install debian-builder exuberant-ctags cscope curl colordiff screen ncftp subversion git tig m4 bison g++ zlib1g-dev flex libncurses5-dev gperf iperf gawk autoconf texinfo libfreetype6-dev dos2unix build-essential vim libstring-crc32-perl ccache libfreetype6 tcl8.5 unzip pkg-config git-core gnupg zip zlib1g-dev libc6-dev x11proto-core-dev libx11-dev python-markdown libxml2-utils tofrodos mingw32 g++-multilib libgl1-mesa-dev lzma htop mr luarocks lua5.1 liblua5.1-0-dev git-svn spawn-fcgi libfcgi-dev libmysqlclient-dev samba cgdb apt-file python-setuptools python-fontforge sshfs rar unrar lib32z1-dev fortune-mod cowsay lynx-cur tftpd-hpa iotop vnc4server blackbox blackbox-themes menu proftpd-basic lsb-core openssh-server openssh-blacklist openssh-blacklist-extra pv python-sphinx texlive-latex-base cifs-utils crash sysstat manpages-posix-dev corkscrew smem cppcheck
+sudo apt-get install debian-builder exuberant-ctags cscope curl colordiff screen ncftp subversion git tig m4 bison g++ zlib1g-dev flex libncurses5-dev gperf iperf gawk autoconf texinfo libfreetype6-dev dos2unix build-essential vim-nox libstring-crc32-perl ccache libfreetype6 tcl8.5 unzip pkg-config git-core gnupg zip zlib1g-dev libc6-dev x11proto-core-dev libx11-dev python-markdown libxml2-utils tofrodos g++-multilib libgl1-mesa-dev lzma htop mr luarocks lua5.1 liblua5.1-0-dev git-svn spawn-fcgi libfcgi-dev libmysqlclient-dev samba cgdb apt-file python-setuptools python-fontforge sshfs rar unrar lib32z1-dev fortune-mod cowsay lynx-cur tftpd-hpa iotop vnc4server blackbox blackbox-themes menu proftpd-basic lsb-core openssh-server openssh-blacklist openssh-blacklist-extra pv python-sphinx texlive-latex-base cifs-utils crash sysstat manpages-posix-dev corkscrew smem cppcheck
 
 # set samba 
 sudo smbpasswd -a mark
 #sudo vi /etc/samba/smb.conf
 sudo rm -rf /etc/samba/smb.conf
-ln -s $HOME/linux-rcfiles/rcfile/smb.conf /etc/samba/smb.conf
+sudo ln -s $HOME/linux-rcfiles/rcfile/smb.conf /etc/samba/smb.conf
 sudo /etc/init.d/smbd restart
 
 # subversion 1.6

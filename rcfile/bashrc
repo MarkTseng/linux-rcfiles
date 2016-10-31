@@ -344,7 +344,10 @@ exist lesspipe && eval "$(lesspipe)"
 #######################
 
 # git loop
-
+function show_packeage_list()
+{
+	dpkg -l | awk '{print $2}' | tr '\n' ' '
+}
 function git_pull_loop()
 {
 	for dir in `ls`; do cd $dir ; git pull ; cd .. ;done
@@ -482,11 +485,11 @@ stty erase ^?
 #######################
 
 ## lua-5.1 environment ##
-export LUA_DIR=/usr/local
-export LUA_LIBDIR=$LUA_DIR/lib/lua/5.1
-export LUA_SHAREDIR=$LUA_DIR/share/lua/5.1
-export LUA_CPATH="?.so;$LUA_LIBDIR/?.so"
-export LUA_PATH="?.lua;$LUA_SHAREDIR/?.lua"                     
+#export LUA_DIR=/home/mark/myResearch/luaDist/LuaDist
+#export LUA_LIBDIR=$LUA_DIR/lib/lua:$LUA_DIR/lib/lua/dist
+#export LUA_SHAREDIR=$LUA_DIR/share/lua
+#export LUA_CPATH="?.so;$LUA_LIBDIR/?.so"
+#export LUA_PATH="?.lua;$LUA_SHAREDIR/?.lua"                     
 #######################
 
 
