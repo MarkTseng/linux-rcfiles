@@ -86,6 +86,8 @@ sudo chmod 777 /ccache_pool
 # python auto complete
 ln -s $HOME/linux-rcfiles/rcfile/pythonstartup.py $HOME/.pythonstartup.py
 
+# ssh hosts config
+ln -s $HOME/linux-rcfiles/rcfile/ssh_config $HOME/.ssh/config 
 # SSH Proxy
 echo "#   ProxyCommand /usr/bin/corkscrew 192.168.0.101 1080 %h %p" >> /etc/ssh/ssh_config
 
