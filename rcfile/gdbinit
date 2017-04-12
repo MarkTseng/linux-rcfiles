@@ -2,11 +2,15 @@
 #file DvdPlayer
 #file TvServer
 #file TvClient
+file live555/sample/mixer/bin/mixer
+target remote 192.168.1.30:12345
 
-#target remote 192.168.135.50:12345
+# mstar IPCM I1 debug
+set solib-search-path .:/home/mark/mstar_workshop/toolchain/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf:/home/mark/mstar_workshop/IPCM/release/SDK/arm/project/I1/debug/system/lib:/home/mark/mstar_workshop/IPCM/source/iNfinity/out/lib
 
-# mstar mixer
-set solib-search-path .:/home/mark/mstar_workshop/toolchain/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/lib:/home/mark/sdb1/mstar_workshop/IPCM/source/iNfinity/out/lib
+
+# mstar IPCM I3 debug
+set solib-search-path .:/home/mark/mstar_workshop/toolchain/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf:/home/mark/mstar_workshop/IPCM-I3/release/SDK/arm/project/I3/debug/system/lib:/home/mark/mstar_workshop/IPCM-I3/source/I3Isp/out/lib
 
 # RTK uclibc 4.4.7
 #set solib-search-path .:/home/mark/RTK_workshop/nike/git/nike_git/system/toolchain/gcc4/msdk-4.4.7-mips-EL-2.6.34-0.9.33-m32ft-131204/lib:/home/mark/RTK_workshop/nike/git/nike_git/system/lib:/home/mark/RTK_workshop/nike/git/nike_git/system/lib_release:/home/mark/RTK_workshop/nike/nike/nike_git/system/lib_release/gles_lib
