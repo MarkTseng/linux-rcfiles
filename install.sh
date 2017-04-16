@@ -90,7 +90,10 @@ ln -s $HOME/linux-rcfiles/rcfile/pythonstartup.py $HOME/.pythonstartup.py
 echo "#   ProxyCommand /usr/bin/corkscrew 192.168.0.101 1080 %h %p" >> /etc/ssh/ssh_config
 
 # USB mount
-cp $HOME/linux-rcfiles/rcfile/usb-mount.sh /usr/local/bin/
-cp $HOME/linux-rcfiles/rcfile/usb-mount@.service /etc/systemd/system/ 
-cp $HOME/linux-rcfiles/rcfile/99-usb-mount.rules /etc/udev/rules.d/
+sudo cp $HOME/linux-rcfiles/rcfile/usb-mount.sh /usr/local/bin/
+sudo cp $HOME/linux-rcfiles/rcfile/usb-mount@.service /etc/systemd/system/ 
+sudo cp $HOME/linux-rcfiles/rcfile/99-usb-mount.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules 
+sudo systemctl daemon-reload 
+
 
