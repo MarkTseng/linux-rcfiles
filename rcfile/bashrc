@@ -141,7 +141,8 @@ alias which='type -a'
 alias quota='quota'
 alias grep='grep --color'
 alias removesvn='find . -depth -name .svn -exec rm -rf {} \;'
-alias ctags='ctags -R *'
+alias ctagsdb='ctags -R *'
+alias ctags_list_func='ctags -x --c-kinds=fp'
 alias indent='indent -kr -i8 -cli8 -nut -ut'
 
 # have to check exist()
