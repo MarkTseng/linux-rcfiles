@@ -331,13 +331,13 @@ case $OS in
         alias dd-wrt_rd1-2='ssh -L 7322:127.0.0.1:7322 192.168.1.1 -lmark -p22'
         alias rd1-2='ssh localhost -p 7322 -lmark'
         alias rd1-2-proxy='ssh -D 8080 localhost -p7322'
-		alias ssh-tunnel-brix='ssh -NfR 7332:127.0.0.1:22 marktseng.synology.me -lmark'
-        alias ssh-reverse-vc66='ssh localhost -p 7332 -lmark'
+		alias ssh-tunnel-brix='ssh -NfR 8080:127.0.0.1:22 marktseng.synology.me -lmark'
+        alias ssh-reverse-vc66='ssh localhost -p 8080 -lmark'
         ;;
 
     Linux)
-		alias ssh-tunnel-brix='ssh -NfR 7332:127.0.0.1:22 marktseng.synology.me -lmark'
-        alias ssh-reverse-vc66='ssh localhost -p 7332 -lmark'
+		alias ssh-tunnel-brix='ssh -o TCPKeepAlive=yes -o ServerAliveInterval=10 -NfR 8080:127.0.0.1:22 marktseng.synology.me -lmark'
+        alias ssh-reverse-vc66='ssh localhost -p 8080 -lmark'
         alias ssh-tunnel-kill='pkill -x ssh'
 
         #alias syncToRD1-3='rsync -r -a -v -e "ssh -l kent" --delete ~/Tools rd1-3:Tools'
