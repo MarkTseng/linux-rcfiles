@@ -296,7 +296,14 @@ case $OS in
         ;;
 esac
 
-PS1=$TXTYLW'\u'$TXTWHT'@'${PROMPT_HOSTCOLOR}'\h'$TXTWHT':'$TXTGRN'\W'$TXTWHT${PROMPT_GIT}$TXTGRN'$(counter)'$TXTGRN' >'$BLDGRN'>'$BLDWHT'> '$TXTWHT
+function PROMPT_GIT() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
+  echo " ("${ref#refs/heads/}")";
+}
+
+
+#PS1=$TXTYLW'\u'$TXTWHT'@'${PROMPT_HOSTCOLOR}'\h'$TXTWHT':'$TXTGRN'\W'$TXTWHT${PROMPT_GIT}$TXTGRN'$(counter)'$TXTGRN' >'$BLDGRN'>'$BLDWHT'> '$TXTWHT
+PS1=$TXTYLW'\u'$TXTWHT'@'${PROMPT_HOSTCOLOR}'\h'$TXTWHT':'$TXTGRN'\W'$TXTCYN'$(PROMPT_GIT)'$TXTGRN'$(counter)'$TXTGRN' >'$BLDGRN'>'$BLDWHT'> '$TXTWHT
 
 # add for screen to dynamically update title
 #PROMPT_COMMAND='echo -n -e "\033k\033\134"'
@@ -530,9 +537,10 @@ esac
 #######################
 
 ## android setting ####
-export LEGACY_USE_JAVA6=1
+export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g"
 #######################
 
 ## python setting #####
 export PYTHONSTARTUP="$HOME/.pythonstartup.py" 
 #######################
+

@@ -15,7 +15,7 @@
 " GitHub:        http://github.com/chenkaie/DotFiles/blob/master/.vimrc
 "                http://github.com/chenkaie/DotFiles/tree/master/.vim/
 "
-" Last Modified: Tue Mar 21, 2017  04:12PM
+" Last Modified: Wed Jan 17, 2018  05:05PM
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -419,7 +419,7 @@ nmap tt :call SwitchLastUsedTab()<CR>
 "let g:pydiction_location = '~/.vim/complete-dict'
 
 "jedi-vim
-let g:jedi#force_py_version = 2
+let g:jedi#force_py_version = "3"
 let g:jedi#goto_command = "<leader>d"
 let g:jedi#goto_assignments_command = "<leader>g"
 let g:jedi#goto_definitions_command = ""
