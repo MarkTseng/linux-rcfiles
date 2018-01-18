@@ -328,16 +328,17 @@ export PROMPT_COMMAND='history -a'
 case $OS in
     Darwin|*BSD)
         alias dd-wrt='ssh 192.168.1.1 -p2222 -lroot'
-        alias dd-wrt_rd1-2='ssh -L 7322:127.0.0.1:7322 192.168.1.1 -lroot -p2222'
-        alias rd1-2='ssh localhost -p 7322 -lmark.tseng'
+        alias dd-wrt_rd1-2='ssh -L 7322:127.0.0.1:7322 192.168.1.1 -lmark -p22'
+        alias rd1-2='ssh localhost -p 7322 -lmark'
         alias rd1-2-proxy='ssh -D 8080 localhost -p7322'
+		alias ssh-tunnel-brix='ssh -NfR 7332:127.0.0.1:22 marktseng.synology.me -lmark'
+        alias ssh-reverse-vc66='ssh localhost -p 7332 -lmark'
         ;;
 
     Linux)
-		alias tunnel-mac='ssh -NfR 7322:172.21.15.130:22 farmersale.no-ip.org'
-		alias tunnel-ap='ssh -NfR 7322:172.21.15.130:22 farmersale.no-ip.org -lmark '
-		alias rd1wiki='ssh -NfR 8080:172.21.15.130:80 farmersale.no-ip.org'
-		alias dd-wrt='ssh farmersale.no-ip.org -p2222 -lroot'
+		alias ssh-tunnel-brix='ssh -NfR 7332:127.0.0.1:22 marktseng.synology.me -lmark'
+        alias ssh-reverse-vc66='ssh localhost -p 7332 -lmark'
+        alias ssh-tunnel-kill='pkill -x ssh'
 
         #alias syncToRD1-3='rsync -r -a -v -e "ssh -l kent" --delete ~/Tools rd1-3:Tools'
         #alias syncToMac='rsync -r -a -v -e "ssh -l kent" --delete ~/Tools chenkaie.no-ip.org:RD1-2/Tools'
