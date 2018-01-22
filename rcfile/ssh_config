@@ -4,3 +4,6 @@ Host hcgit07
 Host hcgit03
     HostName hcgit03
     User mark.tseng
+Host hcgit04
+    HostName hcgit04
+    User mark.tseng

@@ -2,7 +2,7 @@
 
 ## repo default configuration
 ##
-REPO_URL = 'ssh://hcgit04:29518/git-repo'
+REPO_URL = 'ssh://hcgit07:29518/git-repo'
 REPO_REV = 'mstar/master'
 
 # Copyright (C) 2008 Google Inc.
