@@ -338,7 +338,6 @@ case $OS in
     Linux)
 		alias ssh-tunnel-brix='ssh -o TCPKeepAlive=yes -o ServerAliveInterval=10 -NfR 8080:127.0.0.1:22 marktseng.synology.me -lmark'
         alias ssh-reverse-vc66='ssh localhost -p 8080 -lmark'
-        alias ssh-tunnel-kill='pkill -x ssh'
 
         #alias syncToRD1-3='rsync -r -a -v -e "ssh -l kent" --delete ~/Tools rd1-3:Tools'
         #alias syncToMac='rsync -r -a -v -e "ssh -l kent" --delete ~/Tools chenkaie.no-ip.org:RD1-2/Tools'
@@ -361,6 +360,15 @@ function git_pull_loop()
 	for dir in `ls`; do cd $dir ; git pull ; cd .. ;done
 }
 
+# kill ssh revers port number
+function ssh-tunnel-portkill
+{
+    PORT_PID=` sudo netstat -plant | grep 8080 | awk '{print $7}' | awk -F'/' '{print $1}' `
+    for PID in $PORT_PID
+    do
+        kill -9 $PID
+    done
+}
 
 # Easy extract
 extract () 
