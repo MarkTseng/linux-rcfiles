@@ -97,7 +97,7 @@ case $OS in
     Darwin|*BSD)
         export CLICOLOR=1
         export LSCOLORS=ExFxCxDxBxegedabagacad
-        alias ls='ls -FG'
+        #alias ls='ls -FG'
         # By installing Macports: GNU coreutils, alias as Linux-way
         alias ls='ls -FN --color=auto --time-style=long-iso'
         ;;
@@ -536,7 +536,7 @@ export LS_COLORS
 ## cowsay #############
 case $OS in
     Darwin|*BSD)
-	[[ "$PS1" ]] && /opt/local/bin/fortune | /opt/local/bin/cowsay -n
+	[[ "$PS1" ]] && /usr/local/bin/fortune | /usr/local/bin/cowsay -n
     ;;
 
     Linux)

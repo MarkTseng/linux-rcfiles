@@ -1,2 +1,2 @@
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-brew install findutils coreutils htop tig gawk --default-names
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install findutils coreutils htop tig gawk git vim 
