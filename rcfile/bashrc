@@ -47,7 +47,7 @@ case $OS in
 
         # Homebrew stuff 
         if [ -x /usr/local/bin/brew ]; then
-			export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/findutils/bin:$PATH
+			export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/coreutils/8.30/libexec/gnubin:/usr/local/Cellar/findutils/4.6.0/libexec/gnubin:$PATH
             export MANPATH=/usr/local/share/man:$MANPATH
 
             # bash_completion if installed 
@@ -553,3 +553,6 @@ export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g
 export PYTHONSTARTUP="$HOME/.pythonstartup.py" 
 #######################
 
+## Go Path ############
+export GOPATH=$HOME/GoPath
+#######################
