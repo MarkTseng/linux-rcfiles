@@ -1,9 +1,12 @@
-Host hcgit07
-    HostName hcgit07
+Host hcgit02
+    HostName hcgit02
     User mark.tseng
 Host hcgit03
     HostName hcgit03
     User mark.tseng
 Host hcgit04
     HostName hcgit04
+    User mark.tseng
+Host hcgit
+    HostName hcgit
     User mark.tseng

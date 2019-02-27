@@ -3,8 +3,8 @@
 [color]
 	ui = auto
 [user]
-	email = mark.tseng@mstarsemi.com
-	name = mark
+	email = chun-jen.tseng@mediatek.com
+	name = Mark Tseng
 [alias]
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	st = status -uno

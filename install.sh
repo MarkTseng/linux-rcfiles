@@ -79,6 +79,10 @@ sudo ln -s $HOME/tftp /tftp
 sudo rm -rf /etc/default/tftpd-hpa
 sudo cp $HOME/linux-rcfiles/rcfile/tftpd-hpa /etc/default/tftpd-hpa
 
+# setup /etc/init.d script
+sudo cp -a $HOME/linux-rcfiles/rcS/*.sh /etc/init.d
+sudo update-rc.d mount-ts451.sh defaults
+
 # ccache 
 sudo mkdir /ccache_pool
 sudo chmod 777 /ccache_pool
