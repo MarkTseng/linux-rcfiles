@@ -487,13 +487,13 @@ export PATH=$HOME/linux-rcfiles/nike-tools:$PATH
 
 ## set CCACHE #########
 export USE_CCACHE=1
-export CCACHE_DIR=/ccache_pool
+export CCACHE_DIR=/dev/shm/ccachePool
 case $OS in
     Darwin|*BSD)
     ;;
 
     Linux)
-	ccache -M 20G
+	ccache -M 5G
     ;;
 esac
 
@@ -561,7 +561,7 @@ export PYTHONSTARTUP="$HOME/.pythonstartup.py"
 #######################
 
 ## nodejs setting #####
-export NODE_PATH="'$(npm root -g)'"
+#export NODE_PATH="'$(npm root -g)'"
 #######################
 
 ## pkg-config #########

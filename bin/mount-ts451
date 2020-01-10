@@ -15,7 +15,7 @@ mount_ts451() {
     mount -t cifs -o username="admin",password="2jgiogdl",uid=1000,dir_mode=0777 //192.168.1.151/home /home/mark/ts-451
     mount -t cifs -o username="admin",password="2jgiogdl",uid=1000,dir_mode=0777 //192.168.1.151/USBDisk1 /home/mark/ts-451_USBDisk1
     mount UUID="f9279b79-3329-406f-af82-75b845d51000" /home/mark/8TB_HDD
-    mount UUID="c03b35a1-3cc4-4241-bead-573532caed6e" /home/mark/SSD
+    mount UUID="a896ba1f-0a3b-48d1-b668-9bfcf495d284" /home/mark/SSD
 }
 umount_ts451() {
     umount /home/mark/ts-451_USBDisk1
