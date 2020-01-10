@@ -31,12 +31,7 @@ ln -s $HOME/linux-rcfiles/rcfile/vimrc $HOME/.vimrc
 ln -s $HOME/linux-rcfiles/mr/mrtrust $HOME/.mrtrust
 
 # link nike mrconfig
-mkdir $HOME/RTK_workshop
-mkdir $HOME/RTK_workshop/nike
-mkdir $HOME/RTK_workshop/nike/svn
-mkdir $HOME/RTK_workshop/nike/git
-ln -s /home/mark/linux-rcfiles/mr/nike_svn_mrconfig $HOME/RTK_workshop/nike/svn/.mrconfig
-ln -s /home/mark/linux-rcfiles/mr/nike_git_mrconfig $HOME/RTK_workshop/nike/git/.mrconfig
+mkdir $HOME/workshop
 
 # install vimplugin
 tar xfz vimplugin.tgz -C $HOME
