@@ -2,8 +2,8 @@
 #file DvdPlayer
 #file TvServer
 #file TvClient
-file live555/sample/mixer/bin/mixer
-target remote 192.168.1.30:12345
+#file live555/sample/mixer/bin/mixer
+#target remote 192.168.1.30:12345
 
 # mstar IPCM I1 debug
 set solib-search-path .:/home/mark/mstar_workshop/toolchain/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf:/home/mark/mstar_workshop/IPCM/release/SDK/arm/project/I1/debug/system/lib:/home/mark/mstar_workshop/IPCM/source/iNfinity/out/lib
