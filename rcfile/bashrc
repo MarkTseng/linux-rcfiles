@@ -493,7 +493,7 @@ case $OS in
     ;;
 
     Linux)
-	ccache -M 5G
+	#ccache -M 5G
     ;;
 esac
 
@@ -590,4 +590,17 @@ export BAZEL_JAVAC_OPTS="-J-Xms384m -J-Xmx1024m"
 export JAVA_TOOL_OPTS="-Xmx1024m" 
 export EXTRA_BAZEL_ARGS="--host_javabase=@local_jdk//:jdk"
 ########################
-source /home/mark/.bazel/bin/bazel-complete.bash 
+## TRANSMISSION ########
+alias t-daemon-start='sudo service transmission-daemon start'
+alias t-daemon-stop='sudo service transmission-daemon stop'
+alias t-daemon-reload='sudo service transmission-daemon reload'
+alias t-daemon-quit='transmission-remote -n 'transmission:transmission' -q'
+alias t-list='transmission-remote -n 'transmission:transmission' -l'
+alias t-basicstats='transmission-remote -n 'transmission:transmission' -st'
+alias t-fullstats='transmission-remote -n 'transmission:transmission' -si'
+alias t-add='transmission-remote -n 'transmission:transmission' -a '
+alias t-all-start='transmission-remote -n 'transmission:transmission' -s'
+alias t-all-stop='transmission-remote -n 'transmission:transmission' -S'
+alias t-remove-all='transmission-remote -n 'transmission:transmission' -r'
+alias t-remote-cli='transmission-remote-cli -c transmission:transmission@localhost:9091'
+########################
