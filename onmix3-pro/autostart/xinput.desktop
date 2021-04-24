@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=xinput set-prop 15 --type=float "Coordinate Transformation Matrix" 0 -1 1 1 0 0 0 0 1
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=touch-rotate
+Name=touch-rotate
+Comment[en_US]=
+Comment=

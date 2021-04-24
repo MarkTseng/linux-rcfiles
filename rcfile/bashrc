@@ -604,3 +604,7 @@ alias t-all-stop='transmission-remote -n 'transmission:transmission' -S'
 alias t-remove-all='transmission-remote -n 'transmission:transmission' -r'
 alias t-remote-cli='transmission-remote-cli -c transmission:transmission@localhost:9091'
 ########################
+### QEMU LD_PREFIX ####
+export QEMU_LD_PREFIX=/usr/aarch64-linux-gnu
+#######################
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=xrandr --output eDP-1 --rotate left
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=screen-rotate
+Name=screen-rotate
+Comment[en_US]=
+Comment=
