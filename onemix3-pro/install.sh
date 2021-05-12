@@ -28,3 +28,6 @@ sudo cp default-wifi-powersave-on.conf /etc/NetworkManager/conf.d/
 sudo echo "HandleLidSwitchExternalPower=ignore" >> /etc/systemd/logind.conf
 sudo systemctl restart systemd-logind
 
+# undervolt
+sudo pip3 install undervolt
+

@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo undervolt -p1 15 10
+
