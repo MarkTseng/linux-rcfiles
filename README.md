@@ -1,5 +1,5 @@
-ubuntu12.04_rcfiles
+ubuntu 16.04 ~ 22.04 rcfiles
 =============
 
-ubuntu-12.04 rcfiles and vim plugin
+ubuntu 16.04 ~ 22.04 rcfiles and vim plugin
 
