@@ -90,3 +90,5 @@ ln -s $HOME/linux-rcfiles/rcfile/ssh_config $HOME/.ssh/config
 # SSH Proxy
 echo "#   ProxyCommand /usr/bin/corkscrew 192.168.0.101 1080 %h %p" >> /etc/ssh/ssh_config
 
+# wake on lang setting
+sudo ethtool -s enp3s0 wol g
