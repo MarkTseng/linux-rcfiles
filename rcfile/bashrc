@@ -608,3 +608,8 @@ alias t-remote-cli='transmission-remote-cli -c transmission:transmission@localho
 export QEMU_LD_PREFIX=/usr/aarch64-linux-gnu
 #######################
 
+# run neofetch
+/usr/bin/neofetch
+
+# run fish
+exec /usr/bin/fish
