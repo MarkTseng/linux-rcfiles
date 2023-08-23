@@ -493,7 +493,7 @@ case $OS in
     ;;
 
     Linux)
-	#ccache -M 5G
+	#ccache -M 20G
     ;;
 esac
 
@@ -612,4 +612,4 @@ export QEMU_LD_PREFIX=/usr/aarch64-linux-gnu
 /usr/bin/neofetch
 
 # run fish
-exec /usr/bin/fish
+# exec /usr/bin/fish
